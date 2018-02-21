@@ -11,10 +11,20 @@ int a,b,c,d; double part1,part2,q;
 int main(int argc, char *argv[]) {
 	printf("enter the value of A:");
 	scanf("%d",&a);
-	printf("enter the value of B:");
+	printf("enter the value of B(B!=0):");
 	scanf("%d",&b);
-	printf("enter the value of C:");
+	while(b==0){
+		printf("B can not be 0!!!\n");
+		printf("enter the value of B(B!=0):");
+		scanf("%d",&b);
+	}
+	printf("enter the value of C(C>=0):");
 	scanf("%d",&c);
+	while(c==0){
+		printf("C can not be 0!!!\n");
+		printf("enter the value of C(C>=0):");
+		scanf("%d",&c);
+	}
 	 part1=doProduct(a,doShare(doSqrt(doSum(b,c)),b));
 	 
 	 for(d=0;d<=c;d++){				//summ of factorials
