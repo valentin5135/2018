@@ -23,8 +23,6 @@
     1) Оптимізація -O2
     
 .. image:: media/opt_O2.jpg
-       :scale: 100 %
-       :align: center
        
     2) Оптимізація - O0
     .. image:: media/opt_O0.jpg
